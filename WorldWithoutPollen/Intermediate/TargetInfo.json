@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "WorldWithoutPollen",
+			"Path": "..\\Source\\WorldWithoutPollen.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "WorldWithoutPollenEditor",
+			"Path": "..\\Source\\WorldWithoutPollenEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
