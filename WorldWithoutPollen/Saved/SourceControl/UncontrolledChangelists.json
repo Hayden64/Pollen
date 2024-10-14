@@ -1,0 +1,23 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"S:/Game Projects/Pollen/WorldWithoutPollen/Content/UI/W_BaseButton.uasset",
+				"S:/Game Projects/Pollen/WorldWithoutPollen/Content/UI/W_Journal.uasset",
+				"S:/Game Projects/Pollen/WorldWithoutPollen/Content/FirstPerson/Input/IMC_Default.uasset",
+				"S:/Game Projects/Pollen/WorldWithoutPollen/Content/FirstPerson/Blueprints/BP_FirstPersonPlayerController.uasset",
+				"S:/Game Projects/Pollen/WorldWithoutPollen/Content/FirstPerson/Input/Actions/IA_Open.uasset",
+				"S:/Game Projects/Pollen/WorldWithoutPollen/Content/UI/Font/image0.uasset",
+				"S:/Game Projects/Pollen/WorldWithoutPollen/Content/UI/Font/IMG.uasset",
+				"S:/Game Projects/Pollen/WorldWithoutPollen/Content/UI/Font/Lil_me.uasset",
+				"S:/Game Projects/Pollen/WorldWithoutPollen/Content/UI/Font/MawnsHandwriting_PERSONAL_USE_ONLY.uasset",
+				"S:/Game Projects/Pollen/WorldWithoutPollen/Content/UI/Font/MawnsHandwriting_PERSONAL_USE_ONLY_Font.uasset",
+				"S:/Game Projects/Pollen/WorldWithoutPollen/Content/UI/Font/me.uasset",
+				"S:/Game Projects/Pollen/WorldWithoutPollen/Content/UI/Font/typical_gamer.uasset"
+			]
+		}
+	]
+}

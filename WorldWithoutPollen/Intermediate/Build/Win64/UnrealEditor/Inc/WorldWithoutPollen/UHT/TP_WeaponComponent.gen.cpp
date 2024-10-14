@@ -332,14 +332,14 @@ UTP_WeaponComponent::~UTP_WeaponComponent() {}
 // End Class UTP_WeaponComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_WorldWithoutPollen_Source_WorldWithoutPollen_TP_WeaponComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_Game_Projects_Pollen_WorldWithoutPollen_Source_WorldWithoutPollen_TP_WeaponComponent_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UTP_WeaponComponent, UTP_WeaponComponent::StaticClass, TEXT("UTP_WeaponComponent"), &Z_Registration_Info_UClass_UTP_WeaponComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTP_WeaponComponent), 3036886320U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_WorldWithoutPollen_Source_WorldWithoutPollen_TP_WeaponComponent_h_2723840675(TEXT("/Script/WorldWithoutPollen"),
-	Z_CompiledInDeferFile_FID_WorldWithoutPollen_Source_WorldWithoutPollen_TP_WeaponComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_WorldWithoutPollen_Source_WorldWithoutPollen_TP_WeaponComponent_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Game_Projects_Pollen_WorldWithoutPollen_Source_WorldWithoutPollen_TP_WeaponComponent_h_2723840675(TEXT("/Script/WorldWithoutPollen"),
+	Z_CompiledInDeferFile_FID_Game_Projects_Pollen_WorldWithoutPollen_Source_WorldWithoutPollen_TP_WeaponComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Game_Projects_Pollen_WorldWithoutPollen_Source_WorldWithoutPollen_TP_WeaponComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration
