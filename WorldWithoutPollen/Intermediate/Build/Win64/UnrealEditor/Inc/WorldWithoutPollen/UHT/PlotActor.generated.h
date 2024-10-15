@@ -9,10 +9,17 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
+class UPrimitiveComponent;
+struct FHitResult;
 #ifdef WORLDWITHOUTPOLLEN_PlotActor_generated_h
 #error "PlotActor.generated.h already included, missing '#pragma once' in PlotActor.h"
 #endif
 #define WORLDWITHOUTPOLLEN_PlotActor_generated_h
+
+#define FID_WorldWithoutPollen_Source_WorldWithoutPollen_PlotActor_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execOnActorBeginOverlap);
+
 
 #define FID_WorldWithoutPollen_Source_WorldWithoutPollen_PlotActor_h_12_INCLASS_NO_PURE_DECLS \
 private: \
@@ -39,6 +46,7 @@ public: \
 #define FID_WorldWithoutPollen_Source_WorldWithoutPollen_PlotActor_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_WorldWithoutPollen_Source_WorldWithoutPollen_PlotActor_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_WorldWithoutPollen_Source_WorldWithoutPollen_PlotActor_h_12_INCLASS_NO_PURE_DECLS \
 	FID_WorldWithoutPollen_Source_WorldWithoutPollen_PlotActor_h_12_ENHANCED_CONSTRUCTORS \
 private: \
