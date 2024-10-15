@@ -33,6 +33,12 @@
     <Filter Include="Source\WorldWithoutPollen">
       <UniqueIdentifier>{23B0D23D-2D11-3458-A573-13B87CA4C25D}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\WorldWithoutPollen\PlotActor.cpp">
+      <Filter>Source\WorldWithoutPollen</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\WorldWithoutPollen\PlotActor.h">
+      <Filter>Source\WorldWithoutPollen</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\WorldWithoutPollen\TP_PickUpComponent.cpp">
       <Filter>Source\WorldWithoutPollen</Filter>
     </ClCompile>

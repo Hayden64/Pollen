@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\2102114\\pollen\\worldwithoutpollen\\intermediate\\build\\win64\\unrealeditor\\inc\\worldwithoutpollen\\uht\\worldwithoutpollengamemode.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\2102114\\pollen\\worldwithoutpollen\\intermediate\\build\\win64\\x64\\worldwithoutpolleneditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\2102114\\pollen\\worldwithoutpollen\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\worldwithoutpollen\\definitions.worldwithoutpollen.h",
+            "d:\\2102114\\pollen\\worldwithoutpollen\\source\\worldwithoutpollen\\worldwithoutpollengamemode.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "d:\\2102114\\pollen\\worldwithoutpollen\\intermediate\\build\\win64\\unrealeditor\\inc\\worldwithoutpollen\\uht\\worldwithoutpollengamemode.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
