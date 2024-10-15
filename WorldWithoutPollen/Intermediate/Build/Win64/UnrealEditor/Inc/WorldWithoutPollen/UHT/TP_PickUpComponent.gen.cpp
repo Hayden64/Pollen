@@ -250,14 +250,14 @@ UTP_PickUpComponent::~UTP_PickUpComponent() {}
 // End Class UTP_PickUpComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Game_Projects_Pollen_WorldWithoutPollen_Source_WorldWithoutPollen_TP_PickUpComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_WorldWithoutPollen_Source_WorldWithoutPollen_TP_PickUpComponent_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UTP_PickUpComponent, UTP_PickUpComponent::StaticClass, TEXT("UTP_PickUpComponent"), &Z_Registration_Info_UClass_UTP_PickUpComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTP_PickUpComponent), 1913852155U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Game_Projects_Pollen_WorldWithoutPollen_Source_WorldWithoutPollen_TP_PickUpComponent_h_2309486299(TEXT("/Script/WorldWithoutPollen"),
-	Z_CompiledInDeferFile_FID_Game_Projects_Pollen_WorldWithoutPollen_Source_WorldWithoutPollen_TP_PickUpComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Game_Projects_Pollen_WorldWithoutPollen_Source_WorldWithoutPollen_TP_PickUpComponent_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_WorldWithoutPollen_Source_WorldWithoutPollen_TP_PickUpComponent_h_2309486299(TEXT("/Script/WorldWithoutPollen"),
+	Z_CompiledInDeferFile_FID_WorldWithoutPollen_Source_WorldWithoutPollen_TP_PickUpComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_WorldWithoutPollen_Source_WorldWithoutPollen_TP_PickUpComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration
