@@ -15,6 +15,7 @@ ENGINE_API UClass* Z_Construct_UClass_AActor();
 ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
+ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 UPackage* Z_Construct_UPackage__Script_WorldWithoutPollen();
 WORLDWITHOUTPOLLEN_API UClass* Z_Construct_UClass_APlotActor();
@@ -123,11 +124,17 @@ struct Z_Construct_UClass_APlotActor_Statics
 		{ "IncludePath", "PlotActor.h" },
 		{ "ModuleRelativePath", "PlotActor.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_VisualMesh_MetaData[] = {
+		{ "Category", "PlotActor" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "PlotActor.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CollisionBox_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "PlotActor.h" },
 	};
 #endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_VisualMesh;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CollisionBox;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
@@ -140,8 +147,10 @@ struct Z_Construct_UClass_APlotActor_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlotActor_Statics::NewProp_VisualMesh = { "VisualMesh", nullptr, (EPropertyFlags)0x00100000000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlotActor, VisualMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_VisualMesh_MetaData), NewProp_VisualMesh_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlotActor_Statics::NewProp_CollisionBox = { "CollisionBox", nullptr, (EPropertyFlags)0x0010000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlotActor, CollisionBox), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CollisionBox_MetaData), NewProp_CollisionBox_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APlotActor_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlotActor_Statics::NewProp_VisualMesh,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlotActor_Statics::NewProp_CollisionBox,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_APlotActor_Statics::PropPointers) < 2048);
@@ -185,10 +194,10 @@ APlotActor::~APlotActor() {}
 struct Z_CompiledInDeferFile_FID_WorldWithoutPollen_Source_WorldWithoutPollen_PlotActor_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_APlotActor, APlotActor::StaticClass, TEXT("APlotActor"), &Z_Registration_Info_UClass_APlotActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlotActor), 4251087014U) },
+		{ Z_Construct_UClass_APlotActor, APlotActor::StaticClass, TEXT("APlotActor"), &Z_Registration_Info_UClass_APlotActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlotActor), 2665194580U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_WorldWithoutPollen_Source_WorldWithoutPollen_PlotActor_h_2175270636(TEXT("/Script/WorldWithoutPollen"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_WorldWithoutPollen_Source_WorldWithoutPollen_PlotActor_h_562832728(TEXT("/Script/WorldWithoutPollen"),
 	Z_CompiledInDeferFile_FID_WorldWithoutPollen_Source_WorldWithoutPollen_PlotActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_WorldWithoutPollen_Source_WorldWithoutPollen_PlotActor_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

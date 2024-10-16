@@ -14,6 +14,10 @@ class WORLDWITHOUTPOLLEN_API APlotActor : public AActor
 public:	
 	// Sets default values for this actor's properties
 	APlotActor();
+	UPROPERTY(VisibleAnywhere)
+		UStaticMeshComponent* VisualMesh;
+
+	
 
 protected:
 	// Called when the game starts or when spawned
