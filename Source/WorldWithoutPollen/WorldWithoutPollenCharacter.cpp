@@ -45,6 +45,11 @@ AWorldWithoutPollenCharacter::AWorldWithoutPollenCharacter()
 
 }
 
+void AWorldWithoutPollenCharacter::Open_Implementation(AActor* Actor, bool Interact)
+{
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Cyan, FString::Printf(TEXT("Interaction Done")));
+}
+
 void AWorldWithoutPollenCharacter::BeginPlay()
 {
 	// Call the base class  

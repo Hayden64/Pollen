@@ -5,6 +5,10 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Logging/LogMacros.h"
+
+#include "InteractionInterface.h" // implements Interface into base character
+
+
 #include "WorldWithoutPollenCharacter.generated.h"
 
 class UInputComponent;
@@ -17,7 +21,7 @@ struct FInputActionValue;
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
 
 UCLASS(config=Game)
-class AWorldWithoutPollenCharacter : public ACharacter
+class AWorldWithoutPollenCharacter : public ACharacter, public IInteractionInterface
 {
 	GENERATED_BODY()
 
@@ -48,6 +52,10 @@ class AWorldWithoutPollenCharacter : public ACharacter
 	
 public:
 	AWorldWithoutPollenCharacter();
+
+	// Inheriting the Interaction Interface
+	void Open_Implementation(AActor* Actor, bool Interact) override;
+
 
 protected:
 	virtual void BeginPlay();

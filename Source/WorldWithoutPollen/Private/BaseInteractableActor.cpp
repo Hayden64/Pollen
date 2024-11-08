@@ -2,6 +2,9 @@
 
 
 #include "BaseInteractableActor.h"
+
+#include "InteractionInterface.h"
+
 #include "Components/SphereComponent.h"
 
 
@@ -13,6 +16,8 @@ ABaseInteractableActor::ABaseInteractableActor() : Name("DefaultName")
 
 	BoxCollider = CreateDefaultSubobject<UBoxComponent>("BoxCollider");
 	BoxCollider->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
+
+	BoxCollider->OnComponentBeginOverlap.AddDynamic(this, &ABaseInteractableActor::BeginOverlap);
 
 
 }
@@ -29,5 +34,18 @@ void ABaseInteractableActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void ABaseInteractableActor::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	if (OtherActor != nullptr) 
+	{
+		//UE_LOG(LogTemp, Warning, TEXT("Hit Actor"));
+
+		if (OtherActor->Implements<UInteractionInterface>())
+		{
+			IInteractionInterface::Execute_Open(OtherActor, this, true);
+		}
+	}
 }
 
