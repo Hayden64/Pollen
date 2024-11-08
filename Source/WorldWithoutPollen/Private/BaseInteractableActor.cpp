@@ -36,15 +36,16 @@ void ABaseInteractableActor::Tick(float DeltaTime)
 
 }
 
+// Interface Interaction
 void ABaseInteractableActor::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	if (OtherActor != nullptr) 
 	{
 		//UE_LOG(LogTemp, Warning, TEXT("Hit Actor"));
 
-		if (OtherActor->Implements<UInteractionInterface>())
+		if (OtherActor->Implements<UInteractionInterface>()) // checks if overlapping actor implements interface
 		{
-			IInteractionInterface::Execute_Open(OtherActor, this, true);
+			IInteractionInterface::Execute_Open(OtherActor, this, true); // call the interface function
 		}
 	}
 }
