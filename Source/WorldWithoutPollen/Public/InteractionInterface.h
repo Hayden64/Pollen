@@ -22,7 +22,8 @@ class WORLDWITHOUTPOLLEN_API IInteractionInterface
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
-
+	
+	// Makes interface Blueprint and C++ 
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void Open(AActor* Actor, bool Interact);
 
