@@ -16,6 +16,13 @@ DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 //////////////////////////////////////////////////////////////////////////
 // AWorldWithoutPollenCharacter
 
+
+// Interaction
+void AWorldWithoutPollenCharacter::Interact()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Red, TEXT("Interacted"));
+}
+
 AWorldWithoutPollenCharacter::AWorldWithoutPollenCharacter()
 {
 	// Set size for collision capsule
@@ -60,6 +67,11 @@ void AWorldWithoutPollenCharacter::SetupPlayerInputComponent(UInputComponent* Pl
 
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AWorldWithoutPollenCharacter::Look);
+
+		// Interaction 
+		EnhancedInputComponent->BindAction(InteractAction, ETriggerEvent::Started, this, &AWorldWithoutPollenCharacter::Interact); 
+
+		
 	}
 	else
 	{
