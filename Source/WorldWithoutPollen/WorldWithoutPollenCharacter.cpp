@@ -17,7 +17,7 @@ DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 // AWorldWithoutPollenCharacter
 
 
-// Interaction
+// Interaction - HAYDEN
 void AWorldWithoutPollenCharacter::Interact()
 {
 	GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Red, TEXT("Interacted"));
@@ -45,9 +45,10 @@ AWorldWithoutPollenCharacter::AWorldWithoutPollenCharacter()
 
 }
 
+// Interface Event that gets called when overlapping the interactable actor - HAYDEN
 void AWorldWithoutPollenCharacter::Open_Implementation(AActor* Actor, bool Interact)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Cyan, FString::Printf(TEXT("Interaction Done")));
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Cyan, FString::Printf(TEXT("Interaction Done"))); // Functionality goes here
 }
 
 void AWorldWithoutPollenCharacter::BeginPlay()
@@ -73,7 +74,7 @@ void AWorldWithoutPollenCharacter::SetupPlayerInputComponent(UInputComponent* Pl
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AWorldWithoutPollenCharacter::Look);
 
-		// Interaction 
+		// Interaction Enhanced Input uses 'E' to trigger - HAYDEN
 		EnhancedInputComponent->BindAction(InteractAction, ETriggerEvent::Started, this, &AWorldWithoutPollenCharacter::Interact); 
 
 		

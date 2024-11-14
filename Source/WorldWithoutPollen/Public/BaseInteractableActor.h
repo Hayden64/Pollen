@@ -20,7 +20,8 @@ public:
 	// Sets default values for this actor's properties
 	ABaseInteractableActor();
 
-
+	// Andy showing me what the Catagory bit dones in the code 
+	// Dont need it but useful to look at to remind myself
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "CharacterProperties|Name")
 	FString Name;
 
@@ -32,6 +33,7 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	// Begin Overlap Event
 	UFUNCTION()
 	void BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherIndex, bool bFromSweep, const FHitResult& SweepResult);
 

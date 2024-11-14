@@ -41,11 +41,11 @@ class AWorldWithoutPollenCharacter : public ACharacter, public IInteractionInter
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
 	UInputAction* MoveAction;
 
-	// Interact Action
+	// Interact Action - HAYDEN
 	UPROPERTY(EditAnywhere, Category = "Input", meta = (AllowPrivateAccess = "True"))
 	UInputAction* InteractAction;
 
-	// Interaction Function
+	// Interaction Function - HAYDEN
 	void Interact();
 
 
@@ -53,7 +53,7 @@ class AWorldWithoutPollenCharacter : public ACharacter, public IInteractionInter
 public:
 	AWorldWithoutPollenCharacter();
 
-	// Inheriting the Interaction Interface
+	// Inheriting the Interaction Interface - HAYDEN
 	void Open_Implementation(AActor* Actor, bool Interact) override;
 
 
